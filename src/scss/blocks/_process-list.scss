@@ -1,0 +1,38 @@
+.process-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin: 0 -10px -15px -10px;
+    padding: 0;
+
+    @media #{$screen-tablet} {
+        flex-direction: row;
+    }
+
+    &__item {
+        padding: 0 10px 15px 10px;
+        width: 100%;
+
+        @media #{$screen-tablet} {
+            width: 50%;
+        }
+
+        @media #{$screen-desktop} {
+            width: 33.33333%;
+            min-height: 300px;
+        }
+
+        &--four {
+            @media #{$screen-desktop} {
+                order: 4;
+            }
+        }
+
+        &--five {
+            @media #{$screen-desktop} {
+                order: 3;
+            }
+        }
+    }
+}

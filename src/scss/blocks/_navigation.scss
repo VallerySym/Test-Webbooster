@@ -1,0 +1,25 @@
+.navigation {
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+      
+    
+        @media #{$screen-tablet} {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    
+
+    &__link {
+        padding: 5px;
+
+        font-family: "FuturaLight-light";
+        font-weight: 300;
+        font-size: $font-size-small;
+        line-height: 122.8%;
+
+        color: $white;
+    }
+}

@@ -1,0 +1,53 @@
+.accordion {
+    &__item{
+        margin-bottom: 13px;
+    }
+}
+
+.accordion-button {
+    background: linear-gradient(180deg, #ffffff 50.57%, #bdc0ff 100%);
+    box-shadow: 0 0 50px -10px rgba(22, 126, 194, 0.2);
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: $mine-shaft;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+
+    background: linear-gradient(180deg, #969af7 0%, #686eec 100%);
+    border-radius: 10px;
+    color: $white;
+}
+
+.accordion-button::after {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background-image: url('../icons/accordion-arrow-light.svg');
+    background-position: center;
+    background-color: #757AEF;
+}
+
+.accordion-button:not(.collapsed)::after {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background-image: url('../icons/acorrdior-arrow.svg');
+    background-position: center;
+    background-color: $white;
+}
+
+.accordion-button:focus {
+    opacity: 0.7;
+    border: none;
+}

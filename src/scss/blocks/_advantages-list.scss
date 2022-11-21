@@ -1,0 +1,21 @@
+.advantages-list{
+
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 0 -20px -16px -20px;
+
+    &__item {
+        padding: 0 20px 16px 20px;
+
+        width: 100%;
+
+        @media #{$screen-tablet} {
+            width: 50%;
+        }
+
+        @media #{$screen-desktop} {
+            width: 33.33333%;
+        }
+    }
+}

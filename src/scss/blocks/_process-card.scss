@@ -1,0 +1,195 @@
+.process-card {
+    position: relative;
+
+    display: flex;
+
+    padding: 35px 25px 35px 35px;
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(95.22deg, #041080 -2.85%, #0926C0 93.37%),
+        linear-gradient(180deg, #969AF7 0%, #686EEC 100%), #969AF7;
+    border-radius: 10px;
+
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+
+        width: 332px;
+        height: 120px;
+
+        background-image: url('../icons/rectangle.svg');
+        background-repeat: no-repeat;
+
+    }
+
+    &__number {
+
+        margin-right: 10px;
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: $portage;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: $font-size-small;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__text {
+        font-family: 'FuturaBook';
+        font-size: $font-size-small;
+        line-height: 25px;
+        color: #e3e3e3;
+    }
+
+    &__container {
+
+
+        &--arrow {
+            &::before {
+                position: absolute;
+                content: "";
+                top: 50%;
+                right: -26px;
+
+                width: 60px;
+                height: 60px;
+
+                background-color: #0926C0;
+                border-radius: 10px;
+                transform: translateY(-50%) rotate(45deg);
+
+                z-index: 1;
+
+                display: none;
+
+                @media #{$screen-desktop} {
+                    display: block;
+                }
+            }
+        }
+
+        &--arrow-inner {
+            &::after {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: -34px;
+
+                width: 60px;
+                height: 60px;
+
+                background-color: #f2f2f4;
+                border-radius: 10px;
+                transform: translateY(-50%) rotate(45deg);
+
+                display: none;
+
+                @media #{$screen-desktop} {
+                    display: block;
+                }
+            }
+        }
+
+
+        &--arrow-bottom {
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: -25px;
+                left: 50%;
+
+                width: 60px;
+                height: 60px;
+
+                background-color: #071ea8;
+                border-radius: 10px;
+                transform: translateX(-50%) rotate(45deg);
+                z-index: 1;
+
+                display: none;
+
+                @media #{$screen-desktop} {
+                    display: block;
+                }
+            }
+        }
+
+        &--arrow-top-inner {
+            &::after {
+                position: absolute;
+                content: "";
+                top: -34px;
+                left: 50%;
+
+                width: 60px;
+                height: 60px;
+
+                background-color: #f2f2f4;
+                border-radius: 10px;
+                transform: translateX(-50%) rotate(45deg);
+
+                display: none;
+
+                @media #{$screen-desktop} {
+                    display: block;
+                }
+            }
+        }
+
+        &--arrow-left {
+            &::before {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 5px;
+
+                width: 60px;
+                height: 60px;
+
+                background-color: #051389;
+                border-radius: 10px;
+                transform: translateX(-50%) rotate(45deg);
+
+                z-index: 1;
+
+                display: none;
+
+                @media #{$screen-desktop} {
+                    display: block;
+                }
+            }
+        }
+
+        &--arrow-right-inner {
+            &::after {
+                position: absolute;
+                content: "";
+                top: 50%;
+                right: -64px;
+
+                width: 60px;
+                height: 60px;
+
+                background-color: #f2f2f4;
+                border-radius: 10px;
+                transform: translateX(-50%) rotate(45deg);
+
+                display: none;
+
+                @media #{$screen-desktop} {
+                    display: block;
+                }
+            }
+        }
+    }
+}

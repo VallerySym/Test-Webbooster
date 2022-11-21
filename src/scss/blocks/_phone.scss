@@ -1,0 +1,29 @@
+.phone {
+    position: relative;
+
+    padding: 10px 10px 10px 50px;
+
+    font-family: 'FuturaFuturisC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font-size-small;
+    line-height: 122.8%;
+    text-transform: uppercase;
+    color: $white;
+
+    &::before{
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 0;
+
+        width: 33px;
+        height: 33px;
+
+        background-color: $white;
+        border-radius: 50%;
+        background-image: url("../icons/phone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

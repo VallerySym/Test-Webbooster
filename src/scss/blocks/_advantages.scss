@@ -1,0 +1,103 @@
+.advantages {
+    position: relative;
+
+    padding: 32px;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+    background-color: $white;
+    box-shadow: 0 4px 30px rgba(9, 38, 192, 0.05);
+
+    text-align: center;
+
+    @media #{$screen-tablet} {
+        padding: 242px 32px 61px 32px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+
+        width: 332px;
+        height:120px;
+
+        background-image: url('/icons/rectangle.svg');
+        background-repeat: no-repeat;
+
+        @media #{$screen-tablet} {
+            height:162px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        display: none;
+
+        content: "";
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 157px;
+        height: 163px;
+
+        background-repeat: no-repeat;
+
+        @media #{$screen-tablet} {
+            display: block;
+
+        }
+    }
+
+    &--one {
+        &::before {
+            background-image: url('../icons/advatages-1.svg');
+
+        }
+    }
+
+    &--two {
+        &::before {
+            background-image: url('../icons/advatages-2.svg');
+
+        }
+    }
+
+    &--three {
+        &::before {
+            background-image: url('../icons/advatages-3.svg');
+
+        }
+    }
+
+    &--four {
+        &::before {
+            background-image: url('../icons/advatages-4.svg');
+
+        }
+    }
+
+    &--five {
+        &::before {
+            background-image: url('../icons/advatages-5.svg');
+
+        }
+    }
+
+    &--six {
+        &::before {
+            background-image: url('../icons/advatages-6.svg');
+
+        }
+    }
+
+    &__title {
+        color: #2a336c;
+    }
+
+
+}

@@ -1,0 +1,67 @@
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+
+    @if $position {
+        font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+        -o-object-position: $position;
+        object-position: $position;
+    } @else {
+        font-family: "object-fit: #{$fit}";
+    }
+}
+
+
+@mixin title-huge {
+    font-family: 'FuturaFuturisC';
+    font-size: $font-size-huge;
+    line-height: 99.8%;
+    font-weight: 700;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-huge;
+    }
+
+    @media #{$screen-desktop} {
+        font-size: $font-size-huge;
+    }
+}
+
+
+@mixin title-big{
+    font-family: 'FuturaFuturisC';
+    font-size: $font-size-big;
+    line-height: 99.8%;
+    font-weight: 700;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-big;
+    }
+
+    @media #{$screen-desktop} {
+        font-size: $font-size-big;
+    }
+}
+
+@mixin title-medium{
+    font-family: 'FuturaFuturisC';
+    font-size: $font-size-medium;
+    line-height: 23px;
+    font-weight: 700;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-medium;
+    }
+
+    @media #{$screen-desktop} {
+        font-size: $font-size-medium;
+    }
+}
+
+
+@mixin text{
+    font-size: $font-size-normal;
+    font-weight: 400;
+    line-height: 24px;
+}

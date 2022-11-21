@@ -1,0 +1,58 @@
+.button{
+    padding: 19px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: $web-orange;
+
+    font-family: inherit;
+    font-size: $font-size-small;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $white;
+
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.6;
+    }
+
+    &:active{
+        opacity: 0.7;
+    }
+
+    &--purple{
+        background-color: $portage; 
+    }
+    
+    &--arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+        background-color: $portage;
+        opacity: 0.5;
+
+        background-image: url('../icons/arrow-button.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--arrow-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+        background-color: $portage;
+        opacity: 0.5;
+
+        background-image: url('../icons/arrow-button.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        transform: rotate(-180deg);
+    }
+}

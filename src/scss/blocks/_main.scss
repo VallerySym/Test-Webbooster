@@ -1,0 +1,268 @@
+.main {
+
+    flex-grow: 1;
+
+    &__title {
+        margin-bottom: 15px;
+
+        color: $white;
+        font-size: 27px;
+        line-height: 99.8%;
+        text-transform: uppercase;
+
+        @media #{$screen-tablet} {
+            font-size: 35px;
+        }
+
+        @media #{$screen-desktop} {
+            font-size: $font-size-huge;
+        }
+
+        & span {
+            color: $portage;
+            text-transform: lowercase;
+        }
+
+        &--advantages,
+        &--makers,
+        &--work-process,
+        &--process,
+        &--accordion {
+            text-align: center;
+        }
+
+        &--makers {
+            color: $white;
+        }
+    }
+
+    &__text {
+        color: $portage;
+
+        @media #{$screen-tablet} {
+            font-size: $font-size-small;
+
+        }
+
+        @media #{$screen-desktop} {
+            font-size: 23px;
+
+            margin-bottom: 37px;
+        }
+
+        &--form {
+            margin: 0;
+            padding: 32px 0 24px 0;
+
+            font-family: 'FuturaFuturisC';
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 27px;
+
+            text-transform: uppercase;
+            text-align: center;
+            color: $white;
+
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &--advantages,
+        &--work-process,
+        &--process {
+            text-align: center;
+        }
+
+        &--makers {
+            padding-top: 42px;
+            margin-bottom: 30px;
+
+            color: $white;
+        }
+
+        &--advantages {
+            color: #030303;
+
+            @media #{$screen-tablet} {
+                font-size: $font-size-medium;
+            }
+        }
+
+        &--process {
+            @media #{$screen-tablet} {
+                font-size: $font-size-medium;
+            }
+
+        }
+
+    }
+
+    //Секция с формой обратного звонка 
+
+    &__callback-form {
+        padding: 25px 25px 55px 25px;
+
+        background-image: url('../images/bg-header-layer.png'), url('../images/bg-header.png');
+        background-repeat: no-repeat;
+
+        @media #{$screen-tablet} {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            padding: 40px 40px 50px 40px;
+        }
+
+        @media #{$screen-desktop} {
+            flex-direction: row;
+            padding: 55px 55px 315px 55px;
+        }
+
+        @media #{$screen-desktop-large} {
+            padding: 54px 320px 315px 320px;
+        }
+    }
+
+    &__content {
+        &--one {
+            margin-bottom: 25px;
+
+            @media #{$screen-tablet} {
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+        }
+
+        &--form-text {
+            background: linear-gradient(180deg, #6a32b4 0%, #552693 100%);
+            border-radius: 10px 10px 0 0;
+        }
+
+        &--two {
+            display: flex;
+            flex-direction: column;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__benefits {
+        margin-bottom: 25px;
+    }
+
+
+    // Секция с преимуществами
+
+    &__advantages {
+        padding: 25px;
+
+        @media #{$screen-tablet} {
+            padding: 40px 40px 50px 40px;
+        }
+
+        @media #{$screen-desktop} {
+            padding: 55px;
+        }
+
+        @media #{$screen-desktop-large} {
+            padding: 55px 320px;
+        }
+    }
+
+
+    // Секция с производителями
+
+    &__makers {
+        position: relative;
+
+        padding: 25px;
+
+        background-image: url('../images/bg-makers-layer.png'), url('../images/bg-makers.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        @media #{$screen-tablet} {
+            padding: 70px 40px;
+        }
+
+        @media #{$screen-desktop} {
+            padding: 183px 55px;
+        }
+
+        @media #{$screen-desktop-large} {
+            padding: 195px 320px;
+        }
+
+    }
+
+    &__makers-arrows {
+        position: absolute;
+        top: 47%;
+        left: 0;
+        transform: translateY(-50%);
+
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        visibility: hidden;
+
+        @media #{$screen-tablet} {
+            visibility: unset;
+        }
+
+        @media #{$screen-desktop-large} {
+            left: 11%;
+
+            width: 78%;
+        }
+    }
+
+    // Секция с процессом работы
+
+    &__process {
+        padding: 25px;
+        background-image: url('../images/bg-process-layer.png');
+        background-repeat: no-repeat;
+
+        @media #{$screen-tablet} {
+            padding: 70px 40px;
+        }
+
+        @media #{$screen-desktop} {
+            padding: 183px 55px;
+        }
+
+        @media #{$screen-desktop-large} {
+            padding: 195px 320px;
+        }
+    }
+
+    &__button {
+
+        &--process {
+            display: block;
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+    }
+
+    // Секция аккордеон
+
+    &__accordion {
+        padding: 25px;
+
+        @media #{$screen-tablet} {
+            padding: 70px 40px;
+        }
+
+        @media #{$screen-desktop} {
+            padding: 183px 55px;
+        }
+
+        @media #{$screen-desktop-large} {
+            padding: 195px 320px;
+        }
+    }
+}

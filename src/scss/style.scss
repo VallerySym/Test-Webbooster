@@ -1,0 +1,33 @@
+//  Abstracts
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Base
+
+@import "base/_fonts";
+@import "base/generic";
+
+//  Components
+@import "blocks/_page-wrapper";
+@import "blocks/_title";
+@import "blocks/_text";
+@import "blocks/_button";
+
+@import "blocks/_header";
+@import "blocks/_navigation";
+@import "blocks/_phone";
+
+@import "blocks/_benefits";
+@import "blocks/_form";
+
+@import "blocks/_main";
+@import "blocks/_advantages-list";
+@import "blocks/_advantages";
+@import "blocks/_makers-list";
+@import "blocks/_makers";
+@import "blocks/_process-card";
+@import "blocks/_process-list";
+@import "blocks/_accordion";
+
+@import "blocks/_footer";

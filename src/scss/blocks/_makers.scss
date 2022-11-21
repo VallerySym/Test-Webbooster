@@ -1,0 +1,22 @@
+.makers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 174px;
+    width: 100%;
+
+    padding: 10px;
+
+    background: $white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    @media #{$screen-tablet} {
+        height: 130px;
+    }
+    
+    @media #{$screen-desktop} {
+        height: 174px;
+    }
+}

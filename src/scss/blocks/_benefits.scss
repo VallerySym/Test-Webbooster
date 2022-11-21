@@ -1,0 +1,58 @@
+.benefits {
+    position: relative;
+    padding: 25px 0;
+
+    font-family: 'FuturaBook';
+    font-size: $font-size-tiny;
+    line-height: 129.8%;
+    color: $white;
+
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #969AF7 1.34%, rgba(150, 154, 247, 0) 96.66%);
+        border-radius: 10px;
+        opacity: 0.3;
+    }
+
+    @media #{$screen-desktop} {
+        font-size: $font-size-medium;
+    }
+
+    &__item {
+        position: relative;
+
+        padding: 0 0 0 25px;
+        margin-bottom: 5px;
+
+        &:last-child{
+            margin: 0;
+        }
+
+        @media #{$screen-desktop} {
+            padding: 0 0 0 59px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 5px;
+
+            width: 14px;
+            height: 11px;
+            background-image: url('../icons/check.svg');
+
+            @media #{$screen-desktop} {
+                top: 8px;
+                left: 30px;
+            }
+
+        }
+    }
+}

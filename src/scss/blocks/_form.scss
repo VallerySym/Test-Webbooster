@@ -1,0 +1,73 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 31px 40px 36px 40px;
+
+    background-color: $white;
+    border-radius: 0 0 10px 10px;
+
+    @media #{$screen-tablet} {
+        padding: 20px;
+     }
+
+     @media #{$screen-desktop} {
+        padding: 31px 40px 36px 40px;
+     }
+
+    &__label {
+        padding-left: 20px;
+
+        font-family: 'FuturaBook';
+        font-size: $font-size-small;
+        line-height: 128.91%;
+
+        color: #626366;
+    }
+
+    &__input {
+        padding: 21px 20px 16px 20px;
+        margin-bottom: 6px;
+
+        background: #f5f3ff;
+        box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        border: none;
+
+        &::placeholder {
+            font-family: 'FuturaBook';
+            font-size: $font-size-normal;
+            line-height: 128.91%;
+            color: #bcbfc4;
+
+        }
+    }
+
+    &__button {
+        margin: 28px 0 17px 0;
+    }
+
+    &__footnote {
+        position: relative;
+
+        padding-left: 26px;
+
+        font-family: 'FuturaBook';
+        font-size: $font-size-tiny;
+        line-height: 16px;
+
+        color: #c0c0c0;
+
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+
+            width: 16px;
+            height: 16px;
+            background-image: url('../icons/lock.svg');
+        }
+
+    }
+}
